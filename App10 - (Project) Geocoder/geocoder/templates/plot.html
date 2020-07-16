@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9cdf6590cea4ebb8070c1abc5a22092 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b9cdf6590cea4ebb8070c1abc5a22092" ></div>
+        
+</body>
+<script>    
+    
+            var map_b9cdf6590cea4ebb8070c1abc5a22092 = L.map(
+                "map_b9cdf6590cea4ebb8070c1abc5a22092",
+                {
+                    center: [35.682838700000005, 139.7594549],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d90db463b4144508ccf3986288ee0f6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var marker_1905236af372420ab0f161819252a1e0 = L.marker(
+                [35.682838700000005, 139.7594549],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_dce75de114774151af1a0d217397de08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1905236af372420ab0f161819252a1e0.setIcon(icon_dce75de114774151af1a0d217397de08);
+        
+    
+        var popup_8715fbc5cd594f1ebb251b7142585f53 = L.popup({"maxWidth": 400});
+
+        
+            var html_244569d71ece4a24b8c5d3f93b9954d5 = $(`<div id="html_244569d71ece4a24b8c5d3f93b9954d5" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 20.35 °C<br>Mínima: 20 °C<br>Máxima 21.67 °C</div></div>`)[0];
+            popup_8715fbc5cd594f1ebb251b7142585f53.setContent(html_244569d71ece4a24b8c5d3f93b9954d5);
+        
+
+        marker_1905236af372420ab0f161819252a1e0.bindPopup(popup_8715fbc5cd594f1ebb251b7142585f53)
+        ;
+
+        
+    
+    
+            var marker_46ccf6bc386c48b4a255b4195859d256 = L.marker(
+                [37.5666791, 126.97829140000002],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_81923d17b021461d8ff47e7e5cb6202d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46ccf6bc386c48b4a255b4195859d256.setIcon(icon_81923d17b021461d8ff47e7e5cb6202d);
+        
+    
+        var popup_6524cce814be44299f534007c20ebe64 = L.popup({"maxWidth": 400});
+
+        
+            var html_15fceeb21659433a8d74d19ade5d064f = $(`<div id="html_15fceeb21659433a8d74d19ade5d064f" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 22.38 °C<br>Mínima: 21 °C<br>Máxima 23 °C</div></div>`)[0];
+            popup_6524cce814be44299f534007c20ebe64.setContent(html_15fceeb21659433a8d74d19ade5d064f);
+        
+
+        marker_46ccf6bc386c48b4a255b4195859d256.bindPopup(popup_6524cce814be44299f534007c20ebe64)
+        ;
+
+        
+    
+    
+            var marker_6fb010252f8543309f5dd9084e4b9370 = L.marker(
+                [38.8949855, -77.03657079999999],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_05c5ebe05c7341bb90fe60e0c1ad9c94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6fb010252f8543309f5dd9084e4b9370.setIcon(icon_05c5ebe05c7341bb90fe60e0c1ad9c94);
+        
+    
+        var popup_27542fd5e42d43f2b78c891d400d0187 = L.popup({"maxWidth": 400});
+
+        
+            var html_55dac8730d5b4f2aa5e1ef1b8b94f8d4 = $(`<div id="html_55dac8730d5b4f2aa5e1ef1b8b94f8d4" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 27.81 °C<br>Mínima: 26.67 °C<br>Máxima 28.89 °C</div></div>`)[0];
+            popup_27542fd5e42d43f2b78c891d400d0187.setContent(html_55dac8730d5b4f2aa5e1ef1b8b94f8d4);
+        
+
+        marker_6fb010252f8543309f5dd9084e4b9370.bindPopup(popup_27542fd5e42d43f2b78c891d400d0187)
+        ;
+
+        
+    
+    
+            var marker_8a12d95cc762451ead88f802d4ded914 = L.marker(
+                [-10.333333300000001, -53.2],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_c2564a9a8acd481d9bfe7dd2acf5e7f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8a12d95cc762451ead88f802d4ded914.setIcon(icon_c2564a9a8acd481d9bfe7dd2acf5e7f3);
+        
+    
+        var popup_2116aed4306148fd9e6da0111cb33dc6 = L.popup({"maxWidth": 400});
+
+        
+            var html_5d4575beacf84548847bd141f65a472a = $(`<div id="html_5d4575beacf84548847bd141f65a472a" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 34.02 °C<br>Mínima: 34.02 °C<br>Máxima 34.02 °C</div></div>`)[0];
+            popup_2116aed4306148fd9e6da0111cb33dc6.setContent(html_5d4575beacf84548847bd141f65a472a);
+        
+
+        marker_8a12d95cc762451ead88f802d4ded914.bindPopup(popup_2116aed4306148fd9e6da0111cb33dc6)
+        ;
+
+        
+    
+    
+            var marker_3740fb831b304280b528724695b8b24b = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_4824c515a19b4de38b3c32164481c10a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3740fb831b304280b528724695b8b24b.setIcon(icon_4824c515a19b4de38b3c32164481c10a);
+        
+    
+        var popup_7e837fdf9ffe4f13b360cf47c959ef67 = L.popup({"maxWidth": 400});
+
+        
+            var html_f03c278aaca640e788b3bbd208350891 = $(`<div id="html_f03c278aaca640e788b3bbd208350891" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 22.18 °C<br>Mínima: 21.67 °C<br>Máxima 22.78 °C</div></div>`)[0];
+            popup_7e837fdf9ffe4f13b360cf47c959ef67.setContent(html_f03c278aaca640e788b3bbd208350891);
+        
+
+        marker_3740fb831b304280b528724695b8b24b.bindPopup(popup_7e837fdf9ffe4f13b360cf47c959ef67)
+        ;
+
+        
+    
+    
+            var marker_573b5ca58aca4662936636a0fbf0faac = L.marker(
+                [52.517036499999996, 13.388859900000002],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_bbd9017602c34e27a6a216ffec144f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_573b5ca58aca4662936636a0fbf0faac.setIcon(icon_bbd9017602c34e27a6a216ffec144f3d);
+        
+    
+        var popup_bd9c8d27874c465e9ba09c69c476add7 = L.popup({"maxWidth": 400});
+
+        
+            var html_f9dcf08ba35f4e1997a55a0ecb517d91 = $(`<div id="html_f9dcf08ba35f4e1997a55a0ecb517d91" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 20.08 °C<br>Mínima: 18.89 °C<br>Máxima 22.22 °C</div></div>`)[0];
+            popup_bd9c8d27874c465e9ba09c69c476add7.setContent(html_f9dcf08ba35f4e1997a55a0ecb517d91);
+        
+
+        marker_573b5ca58aca4662936636a0fbf0faac.bindPopup(popup_bd9c8d27874c465e9ba09c69c476add7)
+        ;
+
+        
+    
+    
+            var marker_c1d1b8b37a624ae28747c158005bf71d = L.marker(
+                [48.856696899999996, 2.3514616000000004],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_751313e446044dac807f260bdd3cff09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1d1b8b37a624ae28747c158005bf71d.setIcon(icon_751313e446044dac807f260bdd3cff09);
+        
+    
+        var popup_c703249a8e7b44fdb3beb277c98d960b = L.popup({"maxWidth": 400});
+
+        
+            var html_9c5a572553a64cce9733b3b31bf86f1b = $(`<div id="html_9c5a572553a64cce9733b3b31bf86f1b" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 20.65 °C<br>Mínima: 20 °C<br>Máxima 21.11 °C</div></div>`)[0];
+            popup_c703249a8e7b44fdb3beb277c98d960b.setContent(html_9c5a572553a64cce9733b3b31bf86f1b);
+        
+
+        marker_c1d1b8b37a624ae28747c158005bf71d.bindPopup(popup_c703249a8e7b44fdb3beb277c98d960b)
+        ;
+
+        
+    
+    
+            var marker_64b9592f90b64ea6b5d1c219382b2e5d = L.marker(
+                [45.421106, -75.690308],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_378dae7b2e57429c9f27dc74169a66ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64b9592f90b64ea6b5d1c219382b2e5d.setIcon(icon_378dae7b2e57429c9f27dc74169a66ae);
+        
+    
+        var popup_42c3138dd6ce4670a084f840cecf3500 = L.popup({"maxWidth": 400});
+
+        
+            var html_1a1f707d14304d7b8dacd78cf41a46a9 = $(`<div id="html_1a1f707d14304d7b8dacd78cf41a46a9" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 26.51 °C<br>Mínima: 26 °C<br>Máxima 27.22 °C</div></div>`)[0];
+            popup_42c3138dd6ce4670a084f840cecf3500.setContent(html_1a1f707d14304d7b8dacd78cf41a46a9);
+        
+
+        marker_64b9592f90b64ea6b5d1c219382b2e5d.bindPopup(popup_42c3138dd6ce4670a084f840cecf3500)
+        ;
+
+        
+    
+    
+            var marker_eaf96d5069c7456e997862183366b39c = L.marker(
+                [17.971214800000002, -76.79281280000001],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_664f2470820242cf9a74e494797662a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eaf96d5069c7456e997862183366b39c.setIcon(icon_664f2470820242cf9a74e494797662a4);
+        
+    
+        var popup_281a5e0ff4d54f229ea950030746d564 = L.popup({"maxWidth": 400});
+
+        
+            var html_1c44fd270bad48d89370cec631e58055 = $(`<div id="html_1c44fd270bad48d89370cec631e58055" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 28.19 °C<br>Mínima: 27 °C<br>Máxima 30 °C</div></div>`)[0];
+            popup_281a5e0ff4d54f229ea950030746d564.setContent(html_1c44fd270bad48d89370cec631e58055);
+        
+
+        marker_eaf96d5069c7456e997862183366b39c.bindPopup(popup_281a5e0ff4d54f229ea950030746d564)
+        ;
+
+        
+    
+    
+            var marker_2ea3f925939e4795a4fd9c3f8cd8a50e = L.marker(
+                [38.707750700000005, -9.1365919],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_8fab6e87878848c99d394e07b97ab9ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ea3f925939e4795a4fd9c3f8cd8a50e.setIcon(icon_8fab6e87878848c99d394e07b97ab9ab);
+        
+    
+        var popup_a1d1aeedabe14de7bd5865f38c9fca69 = L.popup({"maxWidth": 400});
+
+        
+            var html_d2cf297fc80748cfb5b566df15b4e41f = $(`<div id="html_d2cf297fc80748cfb5b566df15b4e41f" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 36.01 °C<br>Mínima: 34 °C<br>Máxima 38 °C</div></div>`)[0];
+            popup_a1d1aeedabe14de7bd5865f38c9fca69.setContent(html_d2cf297fc80748cfb5b566df15b4e41f);
+        
+
+        marker_2ea3f925939e4795a4fd9c3f8cd8a50e.bindPopup(popup_a1d1aeedabe14de7bd5865f38c9fca69)
+        ;
+
+        
+    
+    
+            var marker_eb6335a509944a02b044b35672d305db = L.marker(
+                [18.547327, -72.33959279999999],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_63ad5846d7fc46f1b3cb56bb7c584428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb6335a509944a02b044b35672d305db.setIcon(icon_63ad5846d7fc46f1b3cb56bb7c584428);
+        
+    
+        var popup_fb2a8382d90744e8b3ae8e7191bd10cc = L.popup({"maxWidth": 400});
+
+        
+            var html_2888e2e79e3d461f9e82c8b60a2970c1 = $(`<div id="html_2888e2e79e3d461f9e82c8b60a2970c1" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 33 °C<br>Mínima: 33 °C<br>Máxima 33 °C</div></div>`)[0];
+            popup_fb2a8382d90744e8b3ae8e7191bd10cc.setContent(html_2888e2e79e3d461f9e82c8b60a2970c1);
+        
+
+        marker_eb6335a509944a02b044b35672d305db.bindPopup(popup_fb2a8382d90744e8b3ae8e7191bd10cc)
+        ;
+
+        
+    
+    
+            var marker_e137a8dd408e40f4b29ef47a6eb22354 = L.marker(
+                [55.7504461, 37.6174943],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_8c6730d52c9a444396129885b20da901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e137a8dd408e40f4b29ef47a6eb22354.setIcon(icon_8c6730d52c9a444396129885b20da901);
+        
+    
+        var popup_7320a00cd8154a4f9fa4ce31ece18434 = L.popup({"maxWidth": 400});
+
+        
+            var html_ba669f56c08d4ad8a3cb45979180dc9d = $(`<div id="html_ba669f56c08d4ad8a3cb45979180dc9d" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 16.03 °C<br>Mínima: 15 °C<br>Máxima 16.67 °C</div></div>`)[0];
+            popup_7320a00cd8154a4f9fa4ce31ece18434.setContent(html_ba669f56c08d4ad8a3cb45979180dc9d);
+        
+
+        marker_e137a8dd408e40f4b29ef47a6eb22354.bindPopup(popup_7320a00cd8154a4f9fa4ce31ece18434)
+        ;
+
+        
+    
+    
+            var marker_381ef6777b8c4a76bf4ed8e7d170d231 = L.marker(
+                [-18.9100122, 47.5255809],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_d1e746e151394c32afff65fbf2000a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_381ef6777b8c4a76bf4ed8e7d170d231.setIcon(icon_d1e746e151394c32afff65fbf2000a20);
+        
+    
+        var popup_e23e0ad361a747598ab12b7ffb42e5df = L.popup({"maxWidth": 400});
+
+        
+            var html_ea8f59e439cd4ce198b1df84536aa187 = $(`<div id="html_ea8f59e439cd4ce198b1df84536aa187" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 14 °C<br>Mínima: 14 °C<br>Máxima 14 °C</div></div>`)[0];
+            popup_e23e0ad361a747598ab12b7ffb42e5df.setContent(html_ea8f59e439cd4ce198b1df84536aa187);
+        
+
+        marker_381ef6777b8c4a76bf4ed8e7d170d231.bindPopup(popup_e23e0ad361a747598ab12b7ffb42e5df)
+        ;
+
+        
+    
+    
+            var marker_96633991b94849d8a0abdf14cf575e54 = L.marker(
+                [-25.7459374, 28.187944399999996],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_01b68b7cda864dcf91ad1bce4c5ba447 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96633991b94849d8a0abdf14cf575e54.setIcon(icon_01b68b7cda864dcf91ad1bce4c5ba447);
+        
+    
+        var popup_afd9ca365523438eb90c87838c154ad2 = L.popup({"maxWidth": 400});
+
+        
+            var html_90a09d534c734474964993ec96a99d67 = $(`<div id="html_90a09d534c734474964993ec96a99d67" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 16.14 °C<br>Mínima: 14.44 °C<br>Máxima 17 °C</div></div>`)[0];
+            popup_afd9ca365523438eb90c87838c154ad2.setContent(html_90a09d534c734474964993ec96a99d67);
+        
+
+        marker_96633991b94849d8a0abdf14cf575e54.bindPopup(popup_afd9ca365523438eb90c87838c154ad2)
+        ;
+
+        
+    
+    
+            var marker_145467b9bca2477587c5cc50db64463b = L.marker(
+                [30.048819, 31.243665999999997],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_c8fcc7fdaa57474baa408579112bb0bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_145467b9bca2477587c5cc50db64463b.setIcon(icon_c8fcc7fdaa57474baa408579112bb0bc);
+        
+    
+        var popup_5538d614fa78477f8ef212e783052e7c = L.popup({"maxWidth": 400});
+
+        
+            var html_61416ae75e2742eeaf505a3f085e4b55 = $(`<div id="html_61416ae75e2742eeaf505a3f085e4b55" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 31 °C<br>Mínima: 31 °C<br>Máxima 31 °C</div></div>`)[0];
+            popup_5538d614fa78477f8ef212e783052e7c.setContent(html_61416ae75e2742eeaf505a3f085e4b55);
+        
+
+        marker_145467b9bca2477587c5cc50db64463b.bindPopup(popup_5538d614fa78477f8ef212e783052e7c)
+        ;
+
+        
+    
+    
+            var marker_6d3a42971c2543319510355446807f21 = L.marker(
+                [-35.2975906, 149.1012676],
+                {}
+            ).addTo(map_b9cdf6590cea4ebb8070c1abc5a22092);
+        
+    
+            var icon_f7049d0e54e2427ca94b8a605bcd769f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d3a42971c2543319510355446807f21.setIcon(icon_f7049d0e54e2427ca94b8a605bcd769f);
+        
+    
+        var popup_063144560b7e4591b18e23bbbb7353e5 = L.popup({"maxWidth": 400});
+
+        
+            var html_40ca1506020840b5aa7e58908636793c = $(`<div id="html_40ca1506020840b5aa7e58908636793c" style="width: 100.0%; height: 100.0%;"><div style='color: black; font-size:14px;'><b>Temperatura</b><br> Atual: 2.13 °C<br>Mínima: -0.56 °C<br>Máxima 5 °C</div></div>`)[0];
+            popup_063144560b7e4591b18e23bbbb7353e5.setContent(html_40ca1506020840b5aa7e58908636793c);
+        
+
+        marker_6d3a42971c2543319510355446807f21.bindPopup(popup_063144560b7e4591b18e23bbbb7353e5)
+        ;
+
+        
+    
+</script>
