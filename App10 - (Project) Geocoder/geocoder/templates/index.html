@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geolocalizador</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+  <body {% block justify_content %}style="justify-content:center;"{% endblock %}> 
+    <div class="form-signin">
+      <form action="{{ url_for('sucess') }}" method="POST" enctype="multipart/form-data">
+          <div class="text-center mb-4">
+              <h1 class="h3 mb-3 font-weight-normal">Geolocalizador</h1>
+              <p>Envie o seu arquivo CSV e aguarde o processamento. Os endereços devem estar em uma coluna nomeada "address".</p>
+          </div>
+          <div class="form-label-group" {{ text | safe}}>
+              {{ text2 | safe }}
+              <input type="file" name="file_name">
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" name="action">Enviar arquivo</button>
+          <button class="btn btn-lg btn-danger btn-block mt-2" type="submit" value="Download_Sample" name="action">Baixar exemplo</button>
+          {% block extra_buttons %}{% endblock %}
+          <div class="text-center text-primary">
+            <br>
+            {{ text3 | safe }}
+          </div>
+      </form>
+    </div>
+    {% block table%}
+
+    {% endblock %}
+    
+    
+  </body>
+</html>

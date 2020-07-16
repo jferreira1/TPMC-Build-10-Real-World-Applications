@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block justify_content %}{% endblock %}
+{% block extra_buttons %}
+<button class="btn btn-lg btn-primary btn-block mt-2" type="submit" value="Map" name="action">Visualizar Mapa</button>
+<button class="btn btn-lg btn-danger btn-block mt-2" type="submit" value="Download_Updated" name="action">Download</button>
+{% endblock %}
+{% block table%}
+<div class="result-table">
+      <table class="table">
+        <thead>
+          <tr>
+            {% for column in df.columns %}
+            <th scope="col">{{ column }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0, df.shape[0]) %}
+          <tr>
+            <th scope="row">{{ df.iat[i,0] }}</th>
+            {% for j in range(1, df.shape[1]) %}
+            <td>{{ df.iat[i, j] }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock %}
